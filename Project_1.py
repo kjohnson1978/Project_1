@@ -25,3 +25,11 @@ def average(ls):
         count += 1
     return (s/count)
 print(average(ls))
+def prob_above(ls):
+    a=average(ls)
+    count=0
+    for student in ls:
+        if student > a:
+            count += 1
+    return count/len(ls)
+print(prob_above(ls))
