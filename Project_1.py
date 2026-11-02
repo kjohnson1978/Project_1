@@ -16,3 +16,12 @@ def histo(ls):
     plt.title('Letters')
     plt.show()
 histo(ls)
+def average(ls):
+    i=0
+    s=0
+    count=0
+    for number in ls:
+        s=s+number
+        count += 1
+    return (s/count)
+print(average(ls))
