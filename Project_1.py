@@ -33,3 +33,17 @@ def prob_above(ls):
             count += 1
     return count/len(ls)
 print(prob_above(ls))
+def median(ls):
+    ls.sort()
+    order=ls
+    x=len(order)
+    if len(order) % 2 == 0:
+        upper=order[(int(x/2))]
+        lower=order[(int(x/2-1))]
+        average=upper+lower/2
+    else:
+        average=order[(int(x/2))]
+    return average
+print(median(ls))
+        
+        
